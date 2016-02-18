@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">YesWeather</string>
+    <string name="hint_txt">123</string>
 </resources>

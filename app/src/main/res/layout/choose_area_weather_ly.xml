@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rango.yesweather.activities.ChooseAreaWeatherActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_txt_ly_hgt"
+        android:background="@color/deepgrey"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/choose_area_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:hint="@string/hint_txt"
+            android:textSize="@dimen/titile_txt_size"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/cornflowerblue"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/publish_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:hint="@string/hint_txt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/publish_time_txt_size" />
+
+            <LinearLayout
+                android:id="@+id/weather_info_ly"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/current_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/cur_date_txt_hgt"
+                    android:layout_gravity="center"
+                    android:hint="@string/hint_txt"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/cur_date_txt_size"/>
+
+                <TextView
+                    android:id="@+id/weather_desp_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/wth_desp_txt_hgt"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:hint="@string/hint_txt"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/weather_desp_txt_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/temperature_ly_hgt"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/temperature1_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/weather_desp_txt_size"
+                        android:hint="@string/hint_txt"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="~"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/weather_desp_txt_size" />
+
+                    <TextView
+                        android:id="@+id/temperature2_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/weather_desp_txt_size"
+                        android:hint="@string/hint_txt"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

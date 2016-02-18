@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="Titile_text_size">25sp</dimen>
+    <!--字体大小-->
+    <dimen name="titile_txt_size">25sp</dimen>
+    <dimen name="cur_date_txt_size">25sp</dimen>
+    <dimen name="publish_time_txt_size">25sp</dimen>
+    <dimen name="weather_desp_txt_size">40sp</dimen>
+
+    <!--布局高度-->
+    <dimen name="title_txt_ly_hgt">45dp</dimen>
+    <dimen name="temperature_ly_hgt">45dp</dimen>
+
+    <!--TextView高度-->
+    <dimen name="cur_date_txt_hgt">45dp</dimen>
+    <dimen name="wth_desp_txt_hgt">60dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>

@@ -6,11 +6,18 @@
     tools:context="com.rango.yesweather.activities.ChooseAreaWeatherActivity"
     android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/title_txt_ly_hgt"
-        android:background="@color/deepgrey"
-        android:gravity="center">
+        android:background="@color/deepgrey">
+
+        <Button
+            android:id="@+id/change_city_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/change_city_btn_ic"
+            android:layout_marginLeft="10dp" />
 
         <TextView
             android:id="@+id/choose_area_tv"
@@ -18,10 +25,20 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:hint="@string/hint_txt"
+            android:layout_centerInParent="true"
             android:textSize="@dimen/titile_txt_size"
             android:layout_gravity="center"/>
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/refresh_weather_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/refresh_btn_ic"/>
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

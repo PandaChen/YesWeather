@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.rango.yesweather.R;
+import com.rango.yesweather.service.AutoUpdateService;
 import com.rango.yesweather.util.HttpCallbackListener;
 import com.rango.yesweather.util.HttpUtil;
 import com.rango.yesweather.util.Utility;
@@ -141,6 +142,8 @@ public class ChooseAreaWeatherActivity extends Activity implements View.OnClickL
         currentDate_tv.setText(preferences.getString("current_date", ""));
         weatherInfo_ly.setVisibility(View.VISIBLE);
         cityName_tv.setVisibility(View.VISIBLE);
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.rango.yesweather.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.SystemClock;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
@@ -118,6 +119,7 @@ public class Utility {
      */
     public static void saveWeatherInfo(Context context, String cityName, String weatherCode, String temperature1, String temperature2, String weatherDesp, String publishTime) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy年M月d日", Locale.CHINA);
+        SimpleDateFormat format = new SimpleDateFormat("yyyy年M月d日 HH:mm:ss");
         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
         editor.putBoolean("city_selected",true);
         editor.putString("city_name", cityName);
@@ -127,6 +129,7 @@ public class Utility {
         editor.putString("weather_desp", weatherDesp);
         editor.putString("publish_time", publishTime);
         editor.putString("current_date", sdf.format(new Date()));
+        editor.putString("fresh_time", format.format(new Date(System.currentTimeMillis())));
         editor.commit();
     }
 
